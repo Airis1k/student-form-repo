@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css">
+      <title>Document</title>
+   </head>
+   <body>
+
+      <form id="student-form" novalidate>
+
+         <div class="form-child">
+            <label for="student-name">Name*</label>
+            <input type="text" name="name" id="student-name" placeholder="John" required>
+         </div>
+
+         <div class="form-child">
+            <label for="student-surname">Surname*</label>
+            <input type="text" name="surname" id="student-surname" placeholder="Cena" required>
+         </div>
+
+         <div class="form-child">
+            <label for="student-age">Age*</label>
+            <input type="number" name="age" id="student-age" min="18" max="100" placeholder="18" required>
+         </div>
+
+         <div class="form-child">
+            <label for="student-phone">Phone*</label>
+            <input type="tel" name="phone" id="student-phone" placeholder="+370">
+         </div>
+
+         <div class="form-child">
+            <label for="student-email">Email*</label>
+            <input type="email" name="email" id="student-email" placeholder="info@gmail.com" required>
+         </div>
+
+         <div class="form-child">
+            <label for="student-knowledge">IT Knowledge</label>
+            <input type="range" name="it-knowledge" id="student-knowledge" min="1" max="10" value="5">
+         </div>
+
+         <fieldset>
+            <legend>Group</legend>
+
+            <div class="radio-form">
+               <label for="feu1">FEU 1 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu1" value="FEU 1" checked>
+            </div>
+
+            <div class="radio-form">
+               <label for="feu2">FEU 2 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu2" value="FEU 2">
+            </div>
+
+            <div class="radio-form">
+               <label for="feu3">FEU 3 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu3" value="FEU 3">
+            </div>
+
+            <div class="radio-form">
+               <label for="feu4">FEU 4 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu4" value="FEU 4">
+            </div>
+
+            <div class="radio-form">
+               <label for="feu5">FEU 5 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu5" value="FEU 5">
+            </div>
+
+            <div class="radio-form">
+               <label for="feu6">FEU 6 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu6" value="FEU 6">
+            </div>
+
+            <div class="radio-form">
+               <label for="feu7">FEU 7 gr.</label>
+               <input type="radio" class="radio-input" name="group" id="feu7" value="FEU 7">
+            </div>
+
+         </fieldset>
+
+         <fieldset>
+            <legend>Interests</legend>
+
+            <div class="check-form">
+               <label for="javascript">JavaScript</label>
+               <input type="checkbox" name="it-language" id="javascript" value="JavaScript">
+            </div>
+
+            <div class="check-form">
+               <label for="c++">C++</label>
+               <input type="checkbox" name="it-language" id="c++" value="C++">
+            </div>
+
+            <div class="check-form">
+               <label for="php">PHP</label>
+               <input type="checkbox" name="it-language" id="php" value="PHP">
+            </div>
+
+            <div class="check-form">
+               <label for="python">Python</label>
+               <input type="checkbox" name="it-language" id="python" value="Python">
+            </div>
+
+            <div class="check-form">
+               <label for="java">Java</label>
+               <input type="checkbox" name="it-language" id="java" value="Java">
+            </div>
+
+         </fieldset>
+
+         <input type="submit" id="save-btn" value="Submit">
+
+      </form>
+
+      <span id="text-report"></span>
+
+      <div id="students-list"></div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
